@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dz-12"
+version = "0.1.0"
+description = ""
+authors = ["9-Bogdan <127949078+9-Bogdan@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "dz_12"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.2"
+alembic = "^1.12.0"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+psycopg2 = "^2.9.9"
+sqlalchemy = "^2.0.22"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
